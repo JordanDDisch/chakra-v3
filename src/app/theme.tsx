@@ -1,4 +1,4 @@
-import { createSystem } from '@chakra-ui/react'
+import { createSystem, defaultConfig } from '@chakra-ui/react'
 
 const colors = {
   primary: {
@@ -7,6 +7,7 @@ const colors = {
 }
 
 export const theme = createSystem({ 
+  ...defaultConfig,
   theme: {
     semanticTokens: {
       colors
